@@ -1,0 +1,40 @@
+﻿<Window x:Class="WindowsUpdateAlert.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WindowsUpdateAlert"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="205" Width="350">
+    <StackPanel>
+        <StackPanel Orientation="Horizontal"
+                    Background="Orange">
+            <Image Source="Resources/Alerta.png" Height="40"></Image>
+            <TextBlock TextWrapping="Wrap" Width="300" FontSize="15">Reinicie su equio para finalizar la instalacion de actializaciones importantes </TextBlock>
+        </StackPanel>
+        <TextBlock TextWrapping="Wrap"
+                   HorizontalAlignment="Right"
+                   Width="300"
+                   Margin="20"> Windows no puede actualizar servicios y archivos importantes, mientras el sistema los esta usando. Asegurese de guardar los archivos antes de reiniciar</TextBlock>
+        <StackPanel Orientation="Horizontal"
+                    HorizontalAlignment="Right"
+                    Margin="0,0,10,10">
+            <Label>Avisarme dentro de:</Label>
+            <ComboBox Width="140">
+            </ComboBox>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal"
+                    VerticalAlignment="Stretch"
+                    HorizontalAlignment="Right"
+                    Background="Gray"
+                    FlowDirection="RightToLeft"
+                    Width="450">
+            <Button Margin="5,5,10,5"
+                    Padding="10,0"
+                    >Posponer</Button>
+            <Button Margin="5,5"
+                    Padding="10,0"
+                    >Reiniciar ahora</Button>
+        </StackPanel>
+    </StackPanel>
+</Window>
